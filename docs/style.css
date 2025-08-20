@@ -92,3 +92,26 @@ h2{
   background:#dff3f5;
   border-top:1px solid #cfe7ea;
 }
+
+/* ==== ABOUT SECTION ==== */
+.about {
+  background-color: #f0f8ff; /* azul muy suave */
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #0B3D91; /* azul marino del logo */
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+}
