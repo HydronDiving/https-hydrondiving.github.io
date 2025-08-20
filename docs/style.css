@@ -16,10 +16,21 @@ body{
   line-height:1.5;
 }
 
-.hero{
-  text-align:center;
-  padding:32px 16px;
-}
+<header class="hero hero-full">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <img src="logo.png" alt="Hydron Diving logo" class="logo" />
+    <h1>Hydron Diving</h1>
+    <p class="claim">Dive into adventure with safety & style.</p>
+
+    <div class="cta-row">
+      <a class="btn" href="#about">About</a>
+      <a class="btn outline" href="#contact">Join us</a>
+      <a class="btn" href="https://instagram.com/hydron_diving/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</header>
+
 
 .logo{
   width:140px;
@@ -156,4 +167,5 @@ html{ scroll-behavior:smooth; }
 @media (max-width: 360px){
   .links{ row-gap: 6px; }
 }
+
 
