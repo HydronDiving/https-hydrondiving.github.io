@@ -157,42 +157,35 @@ html{ scroll-behavior:smooth; }
   .links{ row-gap: 6px; }
 }
 
-/* ==== HERO FULL ==== */
+/* ==== HERO FULL (fondo directo) ==== */
 .hero-full{
   position: relative;
-  min-height: 72vh;
+  min-height: 78vh;                 /* alto visible en desktop */
   display: grid;
   place-items: center;
-  overflow: hidden;
-  padding: 0;
+  padding: 32px 16px;
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920&auto=format&fit=crop")
+              center / cover no-repeat fixed;
 }
-.hero-bg{
+.hero-full::before{
+  content:"";
   position:absolute; inset:0;
-  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920&auto=format&fit=crop");
-  background-size: cover; background-position: center;
-  filter: brightness(.65);
+  background: rgba(0,0,0,.35);      /* oscurece para leer mejor */
 }
 .hero-content{
-  position: relative; z-index: 1;
-  text-align: center;
-  color: #fff;
-  padding: 24px;
+  position:relative; z-index:1;     /* por encima del overlay */
+  text-align:center; color:#fff;
 }
+.hero-logo{ width:120px; height:auto; margin-bottom:6px; }
 .hero-content h1{ color:#fff; font-size:40px; margin:8px 0 6px; }
-.hero-content .claim{ font-size:18px; max-width:720px; margin: 0 auto 14px; color:#eef7f8; }
-.hero-content .btn{ background: #1ABC9C; }
-.hero-content .btn.outline{ border-color:#fff; color:#fff; }
+.hero-content .claim{ font-size:18px; max-width:720px; margin:0 auto 14px; color:#eef7f8; }
+.hero-content .btn{ background:#1ABC9C; }
+.hero-content .btn.outline{ border:2px solid #fff; color:#fff; background:transparent; }
 .hero-content .btn.outline:hover{ background:#ffffff22; }
-@media (max-width:600px){
+
+@media (max-width: 600px){
+  .hero-full{ min-height: 64vh; }   /* un poco más compacto en móvil */
   .hero-content h1{ font-size:28px; }
   .hero-content .claim{ font-size:16px; }
 }
-
-/* logo dentro del hero */
-.hero-logo{ width:120px; height:auto; margin-bottom:6px; }
-
-/* asegurar centrado del contenido del hero */
-.hero-content{ text-align:center; }
-
-
 
