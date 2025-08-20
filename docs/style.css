@@ -16,21 +16,10 @@ body{
   line-height:1.5;
 }
 
-<header class="hero hero-full">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <img src="logo.png" alt="Hydron Diving logo" class="logo" />
-    <h1>Hydron Diving</h1>
-    <p class="claim">Dive into adventure with safety & style.</p>
-
-    <div class="cta-row">
-      <a class="btn" href="#about">About</a>
-      <a class="btn outline" href="#contact">Join us</a>
-      <a class="btn" href="https://instagram.com/hydron_diving/" target="_blank" rel="noopener">Instagram</a>
-    </div>
-  </div>
-</header>
-
+.hero{
+  text-align:center;
+  padding:32px 16px;
+}
 
 .logo{
   width:140px;
@@ -166,6 +155,37 @@ html{ scroll-behavior:smooth; }
 /* Opcional: si se cortan en una línea muy estrecha, permite salto limpio */
 @media (max-width: 360px){
   .links{ row-gap: 6px; }
+}
+
+/* ==== HERO FULL ==== */
+.hero-full{
+  position: relative;
+  min-height: 72vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 0;
+}
+.hero-bg{
+  position:absolute; inset:0;
+  background-image: url("https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=1920&auto=format&fit=crop"); /* fondo temporal */
+  background-size: cover; background-position: center;
+  filter: brightness(.65);
+}
+.hero-content{
+  position: relative; z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 24px;
+}
+.hero-content h1{ color:#fff; font-size:40px; margin:8px 0 6px; }
+.hero-content .claim{ font-size:18px; max-width:720px; margin: 0 auto 14px; color:#eef7f8; }
+.hero-content .btn{ background: #1ABC9C; }
+.hero-content .btn.outline{ border-color:#fff; color:#fff; }
+.hero-content .btn.outline:hover{ background:#ffffff22; }
+@media (max-width:600px){
+  .hero-content h1{ font-size:28px; }
+  .hero-content .claim{ font-size:16px; }
 }
 
 
