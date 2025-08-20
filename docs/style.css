@@ -142,3 +142,32 @@ h2{
 /* scroll suave y compensación por navbar fija */
 html{ scroll-behavior:smooth; }
 #about, #contact, #top{ scroll-margin-top: 80px; }
+
+/* ==== MOBILE FIX (vertical) ==== */
+@media (max-width: 600px){
+  .nav-inner{
+    flex-direction: column;           /* brand arriba, links debajo */
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+  }
+  .brand img{ width:24px; height:24px; }  /* logo un pelín más pequeño */
+  .brand span{ font-size: 16px; }
+
+  .links{
+    justify-content: center;
+    gap: 8px;
+  }
+  .links a{
+    padding: 6px 10px;                /* botones más compactos */
+    font-size: 14px;
+  }
+
+  /* compensa la altura de la navbar en anclas */
+  #about, #contact, #top{ scroll-margin-top: 110px; }
+}
+
+/* Opcional: si se cortan en una línea muy estrecha, permite salto limpio */
+@media (max-width: 360px){
+  .links{ row-gap: 6px; }
+}
