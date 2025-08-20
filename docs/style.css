@@ -115,3 +115,30 @@ h2{
   line-height: 1.6;
   color: #333;
 }
+
+/* ==== NAVBAR ==== */
+.site-nav{
+  position: sticky; top:0; z-index: 1000;
+  background: #ffffffcc; /* blanco con un poco de transparencia */
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #e6eef2;
+}
+.nav-inner{
+  max-width: 1100px; margin: 0 auto;
+  display:flex; align-items:center; justify-content:space-between;
+  gap: 12px; padding: 10px 16px;
+}
+.brand{ display:flex; align-items:center; gap:8px; }
+.brand img{ width:28px; height:28px; border-radius:6px; }
+.brand span{ font-weight:700; color:#0B3D91; }
+
+.links{ display:flex; flex-wrap:wrap; gap:10px; }
+.links a{
+  text-decoration:none; padding:8px 12px; border-radius:8px;
+  color:#0B3D91; border:1px solid transparent; font-weight:600;
+}
+.links a:hover{ border-color:#0B3D91; }
+
+/* scroll suave y compensación por navbar fija */
+html{ scroll-behavior:smooth; }
+#about, #contact, #top{ scroll-margin-top: 80px; }
