@@ -188,5 +188,11 @@ html{ scroll-behavior:smooth; }
   .hero-content .claim{ font-size:16px; }
 }
 
+/* logo dentro del hero */
+.hero-logo{ width:120px; height:auto; margin-bottom:6px; }
+
+/* asegurar centrado del contenido del hero */
+.hero-content{ text-align:center; }
+
 
 
