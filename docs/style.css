@@ -168,7 +168,7 @@ html{ scroll-behavior:smooth; }
 }
 .hero-bg{
   position:absolute; inset:0;
-  background-image: url("https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=1920&auto=format&fit=crop"); /* fondo temporal */
+  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920&auto=format&fit=crop");
   background-size: cover; background-position: center;
   filter: brightness(.65);
 }
@@ -187,5 +187,6 @@ html{ scroll-behavior:smooth; }
   .hero-content h1{ font-size:28px; }
   .hero-content .claim{ font-size:16px; }
 }
+
 
 
