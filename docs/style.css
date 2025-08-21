@@ -176,11 +176,11 @@ html{ scroll-behavior:smooth; }
   text-align: center; /* centra título, párrafo y botones */
 }
 
-/* ==== RESET dentro del HERO (evita que las imágenes se estiren) ==== */
-.hero-full img{
-  width: auto !important;
-  max-width: none !important;
-  height: auto !important;
+.hero-full img {
+  max-width: 100%;   /* que nunca sobrepase el ancho del contenedor */
+  height: auto;      /* mantiene proporción */
+  display: block;    /* elimina espacio en línea */
+  margin: 0 auto;    /* centrado si es necesario */
 }
 
 /* ==== Tamaño del LOGO del hero, fijo y centrado ==== */
@@ -190,3 +190,4 @@ html{ scroll-behavior:smooth; }
   display: block !important;
   margin: 0 auto 12px !important;
 }
+
