@@ -175,3 +175,18 @@ html{ scroll-behavior:smooth; }
 .hero-content {
   text-align: center; /* centra título, párrafo y botones */
 }
+
+/* ==== RESET dentro del HERO (evita que las imágenes se estiren) ==== */
+.hero-full img{
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+}
+
+/* ==== Tamaño del LOGO del hero, fijo y centrado ==== */
+.hero-full .hero-content img.hero-logo{
+  width: 120px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto 12px !important;
+}
