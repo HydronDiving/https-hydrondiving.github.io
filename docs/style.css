@@ -18,12 +18,6 @@ body{
 
 
 
-.logo{
-  width:140px;
-  height:auto;
-  display:block;
-  margin:0 auto 8px;
-}
 
 h1{
   margin:8px 0 4px;
@@ -211,4 +205,20 @@ section.hero-full .hero-content img.hero-logo,
   height: auto !important;
   display: block !important;
   margin: 0 auto 12px !important; /* centrado */
+}
+
+/* Logo pequeño en la barra (navbar) */
+.site-nav .brand img{
+  width:28px !important;
+  height:28px !important;
+  display:block;
+}
+
+/* Logo del HERO: pequeño y centrado sí o sí */
+.hero-full .hero-content img.hero-logo{
+  width:120px !important;
+  max-width:120px !important;
+  height:auto !important;
+  display:block !important;
+  margin:0 auto 12px !important;
 }
