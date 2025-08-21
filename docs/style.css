@@ -188,25 +188,15 @@ html{ scroll-behavior:smooth; }
   object-fit: cover;
 }
 
-/* === HERO con foto de fondo === */
+/* === HERO con imagen de fondo (CSS) === */
 .hero-full{
   position: relative;
-  min-height: 100vh;        /* ocupa la pantalla */
+  min-height: 100vh;
   overflow: hidden;
-  background: none;         /* importante: que no tape la foto */
+  background: url("fondo.jpg") center/cover no-repeat !important;  /* <-- usa el nombre exacto */
 }
 
-/* La imagen de fondo va detrás PERO dentro del hero */
-.hero-bg{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;        /* cubre sin deformarse */
-  z-index: 0;               /* detrás del contenido, pero no por debajo del contenedor */
-}
-
-/* El contenido del hero por encima */
+/* Asegura el contenido encima y centrado */
 .hero-content{
   position: relative;
   z-index: 1;
@@ -214,11 +204,11 @@ html{ scroll-behavior:smooth; }
   color: #fff;
 }
 
-/* (Opcional) oscurecer para que el texto resalte */
+/* (opcional) oscurecer un poco para que el texto destaque
 .hero-full::before{
-  content: "";
-  position: absolute;
-  inset: 0;
+  content:"";
+  position:absolute; inset:0;
   background: rgba(0,0,0,.35);
-  z-index: 0;               /* mismo plano que .hero-bg, pero se verá encima de la imagen */
+  z-index: 0;
 }
+*/
