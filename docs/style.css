@@ -201,3 +201,14 @@ html{ scroll-behavior:smooth; }
   display: block;
   margin: 0 auto 16px;  /* centra el logo con margen abajo */
 }
+
+/* ---- FORCE HERO LOGO SIZE ---- */
+header.hero-full .hero-content img.hero-logo,
+section.hero-full .hero-content img.hero-logo,
+.hero-full .hero-content img.hero-logo {
+  width: 120px !important;
+  max-width: 120px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto 12px !important; /* centrado */
+}
