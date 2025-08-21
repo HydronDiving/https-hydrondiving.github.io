@@ -162,3 +162,16 @@ html{ scroll-behavior:smooth; }
   height: auto;
   display: block;
 }
+
+/* Lock hero logo size on all viewports */
+img.hero-logo{
+  width:120px !important;
+  height:auto !important;
+  display:block !important;
+  margin:0 auto 12px !important;
+}
+
+/* Por si alguna media query grande lo pisa */
+@media (min-width: 768px){
+  img.hero-logo{ width:120px !important; }
+}
