@@ -142,6 +142,7 @@ html{ scroll-behavior:smooth; }
   .links{ justify-content: center; gap: 8px; }
   .links a{ padding: 6px 10px; font-size: 14px; }
   #about, #contact, #top{ scroll-margin-top: 110px; }
+  }  /* <-- CIERRA el @media (max-width: 600px) */
 } /* <- ¡esta llave faltaba! */
 
 /* Opcional: si se cortan en una línea muy estrecha, permite salto limpio */
@@ -158,21 +159,23 @@ html{ scroll-behavior:smooth; }
 
 /* ===== HERO CONTENT TEXT ===== */
 .hero-content {
-  text-align: center;            /* centra título, subtítulo y botones */
+  text-align: center;   /* centra título, subtítulo y botones */
 }
 
 /* ===== Reset seguro de imágenes dentro del HERO ===== */
 .hero-full img{
-  max-width: 100%;               /* nunca se salen del contenedor */
-  height: auto;                  /* mantiene proporción */
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* ===== HERO LOGO: regla ÚNICA y definitiva ===== */
+/* ===== HERO LOGO: ÚNICA y definitiva ===== */
 .hero-full .hero-content .hero-logo{
-  width: 120px;                  /* tamaño fijo del logo */
+  width: 120px;
   height: auto;
   display: block;
-  margin: 0 auto 12px;           /* centrado + aire debajo */
+  margin: 0 auto 12px;
 }
+
+
