@@ -148,13 +148,6 @@ html{ scroll-behavior:smooth; }
   .links{ row-gap: 6px; }
 }
 
-/* ====== HERO LOGO ====== */
-.hero-content .hero-logo {
-  width: 120px;
-  height: auto;
-  display: block;
-  margin: 0 auto 12px;
-}
 
 /* ====== NAV LOGO ====== */
 .nav-logo {
@@ -163,29 +156,22 @@ html{ scroll-behavior:smooth; }
   display: block;
 }
 
-/* Lock hero logo size on all viewports */
-img.hero-logo{
-  width:120px !important;
-  height:auto !important;
-  display:block !important;
-  margin:0 auto 12px !important;
-}
-
-/* Por si alguna media query grande lo pisa */
-@media (min-width: 768px){
-  img.hero-logo{ width:120px !important; }
-}
-
-/* ===== HERO LOGO ===== */
-.hero-logo {
-  width: 120px;   /* Tamaño fijo del logo en hero */
-  height: auto;
-  display: block;
-  margin: 0 auto 12px; /* centrado + espacio abajo */
-}
-
 
 /* ===== HERO CONTENT TEXT ===== */
 .hero-content {
   text-align: center; /* centra título, subtítulo y botones */
+}
+
+/* ===== HERO LOGO FIX DEFINITIVO ===== */
+.hero-logo {
+  width: 120px !important;  /* tamaño fijo */
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto 12px !important; /* centrado horizontal */
+  max-width: 120px !important;    /* nunca crecer más */
+}
+
+/* ===== HERO TEXT CENTER ===== */
+.hero-content {
+  text-align: center; /* centra título, párrafo y botones */
 }
