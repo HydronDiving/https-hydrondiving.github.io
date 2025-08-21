@@ -207,8 +207,10 @@ html{ scroll-behavior:smooth; }
 /* (opcional) oscurecer un poco para que el texto destaque
 .hero-full::before{
   content:"";
-  position:absolute; inset:0;
+  position:absolute; 
+  inset:0;
   background: rgba(0,0,0,.35);
   z-index: 0;
 }
 */
+
