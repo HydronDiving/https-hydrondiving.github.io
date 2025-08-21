@@ -184,11 +184,8 @@ img.hero-logo{
   margin: 0 auto 12px; /* centrado + espacio abajo */
 }
 
-/* Por si alguna media query lo pisa en pantallas grandes */
-@media (min-width: 768px) {
-  .hero-logo {
-    width: 120px !important;
-  }
+
+/* ===== HERO CONTENT TEXT ===== */
+.hero-content {
+  text-align: center; /* centra título, subtítulo y botones */
 }
-
-
