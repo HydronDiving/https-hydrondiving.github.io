@@ -16,10 +16,7 @@ body{
   line-height:1.5;
 }
 
-.hero{
-  text-align:center;
-  padding:32px 16px;
-}
+
 
 .logo{
   width:140px;
@@ -160,7 +157,7 @@ html{ scroll-behavior:smooth; }
 /* ==== HERO FULL (fondo directo) ==== */
 .hero-full{
   position: relative;
-  min-height: 78vh;                 /* alto visible en desktop */
+  min-height: 78vh;
   display: grid;
   place-items: center;
   padding: 32px 16px;
@@ -170,10 +167,10 @@ html{ scroll-behavior:smooth; }
 .hero-full::before{
   content:"";
   position:absolute; inset:0;
-  background: rgba(0,0,0,.35);      /* oscurece para leer mejor */
+  background: rgba(0,0,0,.35);
 }
 .hero-content{
-  position:relative; z-index:1;     /* por encima del overlay */
+  position:relative; z-index:1;
   text-align:center; color:#fff;
 }
 .hero-logo{ width:120px; height:auto; margin-bottom:6px; }
@@ -184,8 +181,7 @@ html{ scroll-behavior:smooth; }
 .hero-content .btn.outline:hover{ background:#ffffff22; }
 
 @media (max-width: 600px){
-  .hero-full{ min-height: 64vh; }   /* un poco más compacto en móvil */
+  .hero-full{ min-height: 64vh; }
   .hero-content h1{ font-size:28px; }
   .hero-content .claim{ font-size:16px; }
 }
-
