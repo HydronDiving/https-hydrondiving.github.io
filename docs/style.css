@@ -148,94 +148,19 @@ html{ scroll-behavior:smooth; }
   .links{ row-gap: 6px; }
 }
 
-/* ==== HERO FULL (fondo directo) ==== */
-.hero-full{
-  position: relative;
-  min-height: 78vh;
-  display: grid;
-  place-items: center;
-  padding: 32px 16px;
-  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920&auto=format&fit=crop")
-              center / cover no-repeat fixed;
-}
-.hero-full::before{
-  content:"";
-  position:absolute; inset:0;
-  background: rgba(0,0,0,.35);
-}
-.hero-content{
-  position:relative; z-index:1;
-  text-align:center; color:#fff;
-}
-.hero-logo{ width:120px; height:auto; margin-bottom:6px; }
-.hero-content h1{ color:#fff; font-size:40px; margin:8px 0 6px; }
-.hero-content .claim{ font-size:18px; max-width:720px; margin:0 auto 14px; color:#eef7f8; }
-.hero-content .btn{ background:#1ABC9C; }
-.hero-content .btn.outline{ border:2px solid #fff; color:#fff; background:transparent; }
-.hero-content .btn.outline:hover{ background:#ffffff22; }
+/* ====== LOGOS ====== */
 
-@media (max-width: 600px){
-  .hero-full{ min-height: 64vh; }
-  .hero-content h1{ font-size:28px; }
-  .hero-content .claim{ font-size:16px; }
-}
-
-/* Logo del hero: pequeño y centrado */
-.hero-logo{
-  width: 120px;      /* ajusta a 100–140 si lo quieres más/menos */
+/* Logo pequeño en la barra de navegación */
+.site-nav .brand img {
+  width: 28px;      /* tamaño pequeño en navbar */
   height: auto;
   display: block;
-  margin: 0 auto 8px;  /* centra el logo */
 }
 
-/* Forzar tamaño fijo del logo */
-.hero-logo {
-  max-width: 120px !important; /* ancho máximo fijo */
-  height: auto !important;
-  display: block;
-  margin: 0 auto 16px;  /* centra el logo con margen abajo */
-}
-
-/* ---- FORCE HERO LOGO SIZE ---- */
-header.hero-full .hero-content img.hero-logo,
-section.hero-full .hero-content img.hero-logo,
+/* Logo del HERO: pequeño y centrado */
 .hero-full .hero-content img.hero-logo {
-  width: 120px !important;
-  max-width: 120px !important;
-  height: auto !important;
-  display: block !important;
-  margin: 0 auto 12px !important; /* centrado */
+  width: 120px;     /* ajusta a 100–140 si quieres más o menos */
+  height: auto;
+  display: block;
+  margin: 0 auto 12px;  /* centrado con espacio debajo */
 }
-
-/* Logo pequeño en la barra (navbar) */
-.site-nav .brand img{
-  width:28px !important;
-  height:28px !important;
-  display:block;
-}
-
-/* Logo del HERO: pequeño y centrado sí o sí */
-.hero-full .hero-content img.hero-logo{
-  width:120px !important;
-  max-width:120px !important;
-  height:auto !important;
-  display:block !important;
-  margin:0 auto 12px !important;
-}
-
-/* Fondo del HERO forzado */
-.hero-full{
-  position:relative;
-  min-height:78vh;
-  display:flex; align-items:center; justify-content:center;
-  padding:48px 16px;
-  background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920&auto=format&fit=crop") !important;
-  background-size:cover !important;
-  background-position:center !important;
-  background-repeat:no-repeat !important;
-}
-.hero-full::before{
-  content:""; position:absolute; inset:0;
-  background:rgba(0,0,0,.35);
-}
-.hero-content{ position:relative; z-index:1; text-align:center; color:#fff; }
