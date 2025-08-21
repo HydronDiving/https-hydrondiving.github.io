@@ -175,3 +175,18 @@ img.hero-logo{
 @media (min-width: 768px){
   img.hero-logo{ width:120px !important; }
 }
+
+/* ===== HERO LOGO ===== */
+.hero-logo {
+  width: 120px;   /* Tamaño fijo del logo en hero */
+  height: auto;
+  display: block;
+  margin: 0 auto 12px; /* centrado + espacio abajo */
+}
+
+/* Por si alguna media query lo pisa en pantallas grandes */
+@media (min-width: 768px) {
+  .hero-logo {
+    width: 120px !important;
+  }
+}
