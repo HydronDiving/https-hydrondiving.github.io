@@ -155,3 +155,10 @@ html{ scroll-behavior:smooth; }
   display: block;
   margin: 0 auto 12px;
 }
+
+/* ====== NAV LOGO ====== */
+.nav-logo {
+  width: 28px;
+  height: auto;
+  display: block;
+}
