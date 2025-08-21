@@ -148,19 +148,10 @@ html{ scroll-behavior:smooth; }
   .links{ row-gap: 6px; }
 }
 
-/* ====== LOGOS ====== */
-
-/* Logo pequeño en la barra de navegación */
-.site-nav .brand img {
-  width: 28px;      /* tamaño pequeño en navbar */
+/* ====== HERO LOGO ====== */
+.hero-content .hero-logo {
+  width: 120px;
   height: auto;
   display: block;
-}
-
-/* Logo del HERO: pequeño y centrado */
-.hero-full .hero-content img.hero-logo {
-  width: 120px;     /* ajusta a 100–140 si quieres más o menos */
-  height: auto;
-  display: block;
-  margin: 0 auto 12px;  /* centrado con espacio debajo */
+  margin: 0 auto 12px;
 }
