@@ -136,58 +136,43 @@ html{ scroll-behavior:smooth; }
 
 /* ==== MOBILE FIX (vertical) ==== */
 @media (max-width: 600px){
-  .nav-inner{flex-direction: column; align-items: center; gap: 8px; padding: 8px 12px; }       /* brand arriba, links debajo */
-  .brand img{ width:24px; height:24px; }  /* logo un pelín más pequeño */
+  .nav-inner{flex-direction: column; align-items: center; gap: 8px; padding: 8px 12px;}
+  .brand img{ width:24px; height:24px; }
   .brand span{ font-size: 16px; }
   .links{ justify-content: center; gap: 8px; }
-  .links a{ padding: 6px 10px; font-size: 14px; }               /* botones más compactos */  /* compensa la altura de la navbar en anclas */
+  .links a{ padding: 6px 10px; font-size: 14px; }
   #about, #contact, #top{ scroll-margin-top: 110px; }
+} /* <- ¡esta llave faltaba! */
 
 /* Opcional: si se cortan en una línea muy estrecha, permite salto limpio */
 @media (max-width: 360px){
   .links{ row-gap: 6px; }
 }
 
-
-/* ====== NAV LOGO ====== */
+/* ===== NAV LOGO ===== */
 .nav-logo {
   width: 28px;
   height: auto;
   display: block;
 }
 
-
 /* ===== HERO CONTENT TEXT ===== */
 .hero-content {
-  text-align: center; /* centra título, subtítulo y botones */
+  text-align: center;            /* centra título, subtítulo y botones */
 }
 
-/* ===== HERO LOGO FIX DEFINITIVO ===== */
-.hero-logo {
-  width: 120px !important;  /* tamaño fijo */
-  height: auto !important;
-  display: block !important;
-  margin: 0 auto 12px !important; /* centrado horizontal */
-  max-width: 120px !important;    /* nunca crecer más */
+/* ===== Reset seguro de imágenes dentro del HERO ===== */
+.hero-full img{
+  max-width: 100%;               /* nunca se salen del contenedor */
+  height: auto;                  /* mantiene proporción */
+  display: block;
+  margin: 0 auto;
 }
 
-/* ===== HERO TEXT CENTER ===== */
-.hero-content {
-  text-align: center; /* centra título, párrafo y botones */
+/* ===== HERO LOGO: regla ÚNICA y definitiva ===== */
+.hero-full .hero-content .hero-logo{
+  width: 120px;                  /* tamaño fijo del logo */
+  height: auto;
+  display: block;
+  margin: 0 auto 12px;           /* centrado + aire debajo */
 }
-
-.hero-full img {
-  max-width: 100%;   /* que nunca sobrepase el ancho del contenedor */
-  height: auto;      /* mantiene proporción */
-  display: block;    /* elimina espacio en línea */
-  margin: 0 auto;    /* centrado si es necesario */
-}
-
-/* ==== Tamaño del LOGO del hero, fijo y centrado ==== */
-.hero-full .hero-content img.hero-logo{
-  width: 120px !important;
-  height: auto !important;
-  display: block !important;
-  margin: 0 auto 12px !important;
-}
-
