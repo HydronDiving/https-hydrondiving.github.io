@@ -193,3 +193,11 @@ html{ scroll-behavior:smooth; }
   display: block;
   margin: 0 auto 8px;  /* centra el logo */
 }
+
+/* Forzar tamaño fijo del logo */
+.hero-logo {
+  max-width: 120px !important; /* ancho máximo fijo */
+  height: auto !important;
+  display: block;
+  margin: 0 auto 16px;  /* centra el logo con margen abajo */
+}
