@@ -194,8 +194,8 @@ html{ scroll-behavior:smooth; }
   min-height: 100vh;
   overflow: hidden;
 
-  /* 🚨 PRUEBA: en lugar de la imagen ponemos un color llamativo */
-  background: #ff0077 !important;
+  /* 👉 ahora apunta al archivo renombrado */
+  background: url("fondo.jpg") center/cover no-repeat !important;
 }
 
 /* Asegura el contenido encima y centrado */
@@ -215,5 +215,6 @@ html{ scroll-behavior:smooth; }
   z-index: 0;
 }
 */
+
 
 
