@@ -216,6 +216,24 @@ html{ scroll-behavior:smooth; }
 }
 */
 
+/* Ajustes de colores en hero */
+.hero h1 {
+  color: #ffffff;   /* Título en blanco */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7); /* un pelín de sombra para que siempre se lea */
+}
+
+.hero p {
+  color: #e0e0e0;   /* Subtítulo gris claro */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.hero .btn {
+  background-color: #1ABC9C;  /* Turquesa */
+  color: #ffffff;             /* Texto blanco */
+  font-weight: bold;
+  border: none;
+}
+
 
 
 
