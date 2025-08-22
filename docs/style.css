@@ -254,6 +254,21 @@ html{ scroll-behavior:smooth; }
   height: auto;
 }
 
+/* Hero section - texto */
+.hero h1 {
+  font-size: 3rem;   /* antes era más pequeño */
+}
+
+.hero p {
+  font-size: 1.5rem;  /* agranda el subtítulo */
+}
+
+/* Botones */
+.hero .btn {
+  font-size: 1.2rem;   /* texto más grande en botones */
+  padding: 14px 28px;  /* botones más anchos y altos */
+}
+
 
 
 
