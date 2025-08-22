@@ -247,3 +247,9 @@ html{ scroll-behavior:smooth; }
   border: 2px solid #ffffff !important; /* Borde blanco */
 }
 
+/* Ajuste del tamaño del logo */
+.logo img {
+  max-width: 170px; /* antes estaba en 150px aprox. */
+  height: auto;
+}
+
