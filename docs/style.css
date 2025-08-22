@@ -238,3 +238,12 @@ html{ scroll-behavior:smooth; }
   border: 2px solid #ffffff; /* borde blanco en lugar de oscuro */
 }
 
+.btn {
+  color: #ffffff !important; /* Fuerza blanco en todos los botones */
+}
+
+.btn.outline {
+  color: #ffffff !important; /* Fuerza blanco en "Join us" */
+  border: 2px solid #ffffff !important; /* Borde blanco */
+}
+
