@@ -189,11 +189,13 @@ html{ scroll-behavior:smooth; }
 }
 
 /* === HERO con imagen de fondo (CSS) === */
-.hero-full{
+.hero-full {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background: url("fondo.jpg") center/cover no-repeat !important;  /* <-- usa el nombre exacto */
+
+  /* 🚨 PRUEBA: en lugar de la imagen ponemos un color llamativo */
+  background: #ff0077 !important;
 }
 
 /* Asegura el contenido encima y centrado */
@@ -213,4 +215,5 @@ html{ scroll-behavior:smooth; }
   z-index: 0;
 }
 */
+
 
