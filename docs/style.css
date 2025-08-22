@@ -216,3 +216,16 @@ html{ scroll-behavior:smooth; }
 }
 */
 
+/* Ajustes de colores en la sección hero */
+.hero h1 {
+  color: #ffffff;   /* blanco */
+}
+
+.hero p {
+  color: #e0e0e0;   /* gris claro */
+}
+
+.hero .btn {
+  color: #ffffff;   /* texto blanco en los botones */
+}
+
