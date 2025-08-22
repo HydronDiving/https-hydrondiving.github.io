@@ -253,3 +253,9 @@ html{ scroll-behavior:smooth; }
   height: auto;
 }
 
+/* Tamaño del logo (override) */
+.logo{
+  width: 170px !important;  /* súbelo un pelín */
+  height: auto;
+}
+
