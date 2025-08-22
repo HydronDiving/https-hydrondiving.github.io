@@ -269,6 +269,10 @@ html{ scroll-behavior:smooth; }
   padding: 14px 28px;  /* botones más anchos y altos */
 }
 
+.hero h1{ font-size:3rem !important; }
+.hero p{ font-size:1.5rem !important; }
+.hero .btn{ font-size:1.1rem !important; padding:14px 24px !important; }
+
 
 
 
