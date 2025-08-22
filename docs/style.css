@@ -249,13 +249,14 @@ html{ scroll-behavior:smooth; }
 
 /* Ajuste del tamaño del logo */
 .logo img {
-  max-width: 170px; /* antes estaba en 150px aprox. */
+  max-width: 200px; /* antes estaba en 150px aprox. */
   height: auto;
 }
 
 /* Tamaño del logo (override) */
 .logo{
-  width: 170px !important;  /* súbelo un pelín */
+  width: 200px !important;  /* súbelo un pelín */
   height: auto;
 }
+
 
