@@ -229,3 +229,12 @@ html{ scroll-behavior:smooth; }
   color: #ffffff;   /* texto blanco en los botones */
 }
 
+.btn {
+  color: #ffffff; /* blanco para el texto */
+}
+
+.btn.outline {
+  color: #ffffff; /* fuerza blanco en el "Join us" */
+  border: 2px solid #ffffff; /* borde blanco en lugar de oscuro */
+}
+
