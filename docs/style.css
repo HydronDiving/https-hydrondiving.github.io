@@ -247,17 +247,13 @@ html{ scroll-behavior:smooth; }
   border: 2px solid #ffffff !important; /* Borde blanco */
 }
 
-/* Ajuste del tamaño del logo */
-.logo img {
-  max-width: 170px; /* antes estaba en 150px aprox. */
-  height: auto;
-}
 
 /* Tamaño del logo (override) */
 .logo{
-  width: 170px !important;  /* súbelo un pelín */
+  width: 200px !important;  /* súbelo un pelín */
   height: auto;
 }
+
 
 
 
