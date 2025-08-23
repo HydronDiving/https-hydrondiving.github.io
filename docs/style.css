@@ -273,6 +273,10 @@ html{ scroll-behavior:smooth; }
 .hero p{ font-size:1.5rem !important; }
 .hero .btn{ font-size:1.1rem !important; padding:14px 24px !important; }
 
+.hero-content {
+  text-align: center;
+}
+
 
 
 
